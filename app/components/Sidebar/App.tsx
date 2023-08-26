@@ -100,7 +100,7 @@ function AppSidebar() {
                 label={t("Search")}
                 exact={false}
               />
-              {can.createDocument && (
+              {can.createDocument && document.totalDrafts && (
                 <SidebarLink
                   to={draftsPath()}
                   icon={<EditIcon />}
